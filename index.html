@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang=“en>
+
+<head>
+    <title>My Landing Page</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2bfe2b70c5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Permanent+Marker|Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> </head>
+
+<body>
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#news">News</a></li>
+            <li class="topnav-right"><a href="#signup">Sign UP</a></li>
+            <li class="topnav-right"><a href="#signin">Sign In</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+    <!-- <div class= "flex-container" id="section-1-gradient">
+        <div class="flex-item col-2">           
+            <form class="form1">
+                <h2>Username</h2>
+                <input class="inputbox" name="username" type="text" placeholder="Username">
+                <h2>Password</h2>
+                <input class="inputbox" name="password" type="text" placeholder="Password">
+            </form>
+        </div>
+        <div class="flex-item col-2">
+            <div class="videoContainer">
+                <iframe src="https://www.youtube.com/embed/PPLop4L2eGk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div> -->
+    <header>
+        <h1 class="section2Header"> Which One Do You Like?</h1> </header>
+    <div class="flex-container">
+        <div class="flex-item-2">
+            <div class="icon">
+                <label> <img src="images/venus-2721120_640.png">
+                    <input type="radio" name="gender" value="female" /> </label>
+            </div>
+        </div>
+        <div class="flex-item-2">
+            <div class="icon">
+                <label> <img src="images/mars-2554146_640.png">
+                    <input type="radio" name="gender" value="male" /> </label>
+            </div>
+        </div>
+    </div>
+    <header>
+        <h1 class="section2Header"> Select Your Ascendent sign</h1> </header>
+    <div class="flex-container">
+        <div class="flex-item">
+            <div class="box">
+                <div class="icon">
+                    <label> <img src="images/ares.jpg">
+                        <input type="radio" name="sign" value="1" /> </label>
+                </div>
+                <label> Aries </label>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="box">
+                <div class="icon">
+                    <label> <img src="images/taurus.jpg">
+                        <input type="radio" name="sign" value="2" /> </label>
+                </div>
+                <label> Taurus </label>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="box">
+                <div class="icon">
+                    <label> <img src="images/gemini.jpg">
+                        <input type="radio" name="sign" value="3" /> </label>
+                </div>
+                <label> Gemini </label>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="box">
+                <div class="icon">
+                    <label> <img src="images/cancer.jpg">
+                        <input type="radio" name="sign" value="4" /> </label>
+                </div>
+                <label> Cancer </label>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="box">
+                <div class="icon">
+                    <label> <img src="images/lion.jpg">
+                        <input type="radio" name="sign" value="5" /> </label>
+                </div>
+                <label> Leo </label>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="box">
+                <div class="icon">
+                    <label> <img src="images/virg.jpg">
+                        <input type="radio" name="sign" value="6" /> </label>
+                </div>
+                <label> Virgo </label>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="box">
+                <div class="icon">
+                    <label> <img src="images/libra.jpg">
+                        <input type="radio" name="sign" value="7" /> </label>
+                </div>
+                <label> Libra </label>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="box">
+                <div class="icon">
+                    <label> <img src="images/scorpio.jpg">
+                        <input type="radio" name="sign" value="8" /> </label>
+                </div>
+                <label> scorpio </label>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="box">
+                <div class="icon">
+                    <label> <img src="images/sagga.jpg">
+                        <input type="radio" name="sign" value="9" /> </label>
+                </div>
+                <label> Sagittarius </label>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="box">
+                <div class="icon">
+                    <label> <img src="images/capricon.jpg">
+                        <input type="radio" name="sign" value="10" /> </label>
+                </div>
+                <label> Capricorn </label>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="box">
+                <div class="icon">
+                    <label> <img src="images/aqua.jpg">
+                        <input type="radio" name="sign" value="11" /> </label>
+                </div>
+                <label> Aquarius </label>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="box">
+                <div class="icon">
+                    <label> <img src="images/pices.jpg">
+                        <input type="radio" name="sign" value="12" /> </label>
+                </div>
+                <label> Pisces </label>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="flex-container">
+        <button id="resBtn" class="submit"> Submit </button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img id="resImg" src="#">
+                <p id="editContent">Thank you for taking this test!</p>
+            </div>
+        </div>
+    </div>
+        <!--
+    <footer class="footStyle">
+        <div class="flex-container">
+            <div class="flex-item col-3">
+                <h1> Connect</h1>
+                <ul>
+                    <li><a href="#"><i class="fab fa-weixin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-snapchat"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="flex-item col-3">
+                <h1> Find</h1>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+
+       
+            <div class="flex-item col-3">
+                <h1> Contact</h1>
+                <ul>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                </ul>
+            </div>
+      
+        
+        </div>
+
+    </footer>
+-->
+        <!--/* the dropdownMenu function below is copied from udemy https://www.udemy.com/course/ultimate-web/learn/lecture/7354608?start=45#overview  */-->
+        <script>
+            function dropdownMenu() {
+                var x = document.getElementById("dropdownClick");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                }
+                else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+        <script src="main.js"></script>
+</body>
+
+</html>

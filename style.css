@@ -1,0 +1,406 @@
+/*#########Defaults#############*/
+nav,
+header,
+footer{
+    display: block;
+}
+
+body{
+    background-image: url("images/bg.jpg");
+    wideth: 100%;
+    line-height: 1;
+    margin: 0;
+    
+}
+
+
+
+label{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+p{
+    font-size: 28px;
+    font-family: 'Lobster', cursive;
+    line-height: 1.2;
+}
+
+article p{
+    font-size: 35px;
+    font-family: 'Lobster', cursive;
+    padding: 20px;
+}
+
+.flex-container{
+    display: flex;
+    width: 100%;
+/*    flex-wrap: wrap;*/
+    align-items: center;
+    align-content: space-around;
+    flex-flow:  wrap row;
+    
+}
+
+.flex-item-2{
+   
+    width: 50%;
+    height:25%;
+    border-radius: 50%
+    background-size: cover;
+    min-width: 300px;
+    padding: 10%;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+
+}
+
+
+.flex-item{
+    width: 25%;
+    height:25%;
+    background-size: cover;
+    min-width: 300px;
+    padding: 5px;
+    align-self: center;
+    align-content: center;
+}
+
+.form1{
+    margin: 15%;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+
+
+.col-2 {width: 50%;}
+.col-3 {width: 33%;}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*######### Modal #############*/
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*######### Nav Bar #############*/
+
+nav{
+    width: 100%;
+    margin: 0;
+}
+
+nav ul{
+    background-color: #eee;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li{
+    list-style: none;
+    float: left;
+}
+
+ul.topnav li.topnav-right{
+    float: right;
+}
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+ul.topnav li a:hover {
+    background-color: #0080ff;
+    color: #fff;
+}
+
+ul.topnav li.dropdownIcon {
+    display: none;
+}
+
+
+/*######### Custom Style #############*/
+
+
+#section-1-gradient {
+    background-image: url("https://images.unsplash.com/photo-1479981280584-037818c1297d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-size: 100%;
+
+    /* position: relative;
+    width: auto;
+    background-position: center center;
+    background-repeat: repeat;
+    overflow: hidden; */
+}
+
+div.box{
+    text-align: center;
+    margin: 24px;
+    padding: 36px 24px 40px 24px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .15), 0 2px 3px 0 rgba(0,0,0,.1);
+}
+
+div.icon{
+    width: 100%;
+    display: flex;
+    
+    margin: auto;
+}
+
+
+
+div.icon img{
+    width: 100%;
+    display: flex;
+/*    border-radius: 50%;*/
+    margin: auto;
+    box-shadow: -2px -2px 20px 2px rgba(63, 191, 191, 0.3), 2px 2px 17px 2px rgba(141,250,250,0.3);
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+div.icon img:hover{
+    border-radius: 50%;
+}
+
+
+
+
+
+div.picture img{
+    display: block;
+    margin: auto;
+    box-shadow: -2px -2px 20px 2px rgba(0, 0, 0, .15), 2px 2px 17px 2px rgba(0,0,0,1)
+    width:100%;
+}
+
+button {
+    font-size: 32px;
+    font-family: 'Lobster', cursive;
+    font-weight: 700;
+    color: #fff;
+    background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+    padding: 15px 60px;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    border-radius: 7px;
+    
+  }
+  
+  button.submit {
+    display: block;
+    margin: auto;
+  }
+    
+  
+  div.leftSide-col {
+    margin-left: 30%;
+  }
+  
+  div.rightSide-col {
+    margin-left: 15%;
+  }
+
+h1.large{
+    color: #fff;
+    font-size: 56px;
+    margin: 0;
+    line-height: 70px;
+}
+
+h1.section2Header {
+    font-size: 65px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Lobster', cursive;
+  }
+
+form h2{
+    color: #fff;
+    
+}
+
+input[type="text"]{
+    font-size: 20px;
+    width: 400px;
+    min-width: 20px;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+input[type=radio]{
+    display:none; 
+}
+
+footer.footStyle{
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    padding-left: 10%;
+}
+
+footer.footStyle h1 {
+    color: #fff;
+    font-size: 35px;
+}
+  
+footer.footStyle ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+  
+footer.footStyle ul li {
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.5;
+}
+  
+
+.videoContainer iframe {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    width: 500px;
+    height: 315px;
+    margin: 0;
+    overflow: hidden;
+}
+
+
+
+
+/*######### Mobile #############*/
+/* the mobile part is mainly adapted from udemy https://www.udemy.com/course/ultimate-web/learn/lecture/7354608?start=45#overview */
+
+@media screen and (max-width: 680px){
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
+    }
+    
+    ul.topnav li.dropdownIcon{
+        display: block;
+        float: right;
+    }
+    
+    ul.topnav.responsive li.dropdownIcon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    ul.topnav.responsive{
+        position: relative;
+    }
+    
+    ul.topnav.responsive li{
+        display: inline;
+        float: none;
+    }
+    
+    ul.topnav.responsive li a{
+        display: block;
+        text-align: left;
+    }
+    
+    
+    h1.section2Header {
+        font-family: 'Lobster', cursive;
+        font-size: 50px;
+        color: #fff;
+      }
+    
+    article p {
+        font-size: 25px;
+    }
+    
+    
+    div.mobileStack {
+        width: 50%;
+        display: block;
+    }
+    
+    div.box {
+        padding: 5px;
+        display: block;
+    }
+    
+    div.picture {
+        margin: 10px;
+    }
+    
+    div.picture img {
+        width: 100%;
+    }
+    
+    input[type=radio]{
+        display:none; 
+    }
+    
+    input[type="text"]{
+        width: 100%;
+    }
+    
+    .videoContainer iframe {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+}
