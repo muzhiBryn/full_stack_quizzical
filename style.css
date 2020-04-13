@@ -7,7 +7,7 @@ footer{
 
 body{
     background-image: url("images/bg.jpg");
-    wideth: 100%;
+    width: 100%;
     line-height: 1;
     margin: 0;
     
@@ -46,7 +46,7 @@ article p{
    
     width: 50%;
     height:25%;
-    border-radius: 50%
+    border-radius: 50%;
     background-size: cover;
     min-width: 300px;
     padding: 10%;
@@ -104,6 +104,38 @@ article p{
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+/*######### Modal background image #############*/
+/* #gradient{
+  width: 30%;
+  height: 800px;
+  padding: 0px;
+  margin: 0px;
+} */
+
+/* Modal Image */
+
+#resImg{
+    /* padding: 20px; */
+    width: 50%;
+    height:50%;
+    margin: 0px;
+}
+
+
+  
+  
+  
+ 
+/*
+  body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+  }
+*/
+
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
@@ -127,6 +159,56 @@ article p{
   text-decoration: none;
   cursor: pointer;
 }
+
+#editContent {
+    /* word-wrap: break-word;
+    word-break:normal; */
+    width: 50%;
+    overflow: hidden;
+    animation: typewriter;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(25, end);
+    font-size: 24px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+#editContent::after{
+  
+    content:"|";
+    position: relative;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 2s;
+    animation-timing-function: steps(1, end);
+    font-size: 24px;
+}
+
+@keyframes typewriter {
+
+    0%,
+    100% {
+        width: 0;
+    }
+
+    20%,
+    80% {
+        width: 100%;
+    }
+}
+
+@keyframes caret {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+} */
 
 /*######### Nav Bar #############*/
 
@@ -206,7 +288,6 @@ div.icon{
 div.icon img{
     width: 100%;
     display: flex;
-/*    border-radius: 50%;*/
     margin: auto;
     box-shadow: -2px -2px 20px 2px rgba(63, 191, 191, 0.3), 2px 2px 17px 2px rgba(141,250,250,0.3);
     cursor: pointer;
@@ -215,19 +296,12 @@ div.icon img{
     transition-timing-function: linear;
 }
 
-div.icon img:hover{
+div.icon img.image-selected {
     border-radius: 50%;
 }
 
-
-
-
-
-div.picture img{
-    display: block;
-    margin: auto;
-    box-shadow: -2px -2px 20px 2px rgba(0, 0, 0, .15), 2px 2px 17px 2px rgba(0,0,0,1)
-    width:100%;
+div.icon img:hover{
+    border-radius: 50%;
 }
 
 button {
@@ -247,6 +321,15 @@ button {
   button.submit {
     display: block;
     margin: auto;
+    cursor: pointer;
+    box-shadow: 0 2px 0 #2E4053;
+    transition: all .1s linear;
+  }
+  
+  .submit:hover{
+    transform: translateY(-7px);
+    box-shadow: 0 5px 0 #2E4053;
+    border: none;
   }
     
   
@@ -321,8 +404,6 @@ footer.footStyle ul li {
     margin: 0;
     overflow: hidden;
 }
-
-
 
 
 /*######### Mobile #############*/

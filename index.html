@@ -4,6 +4,7 @@
 <head>
     <title>My Landing Page</title>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
     <script src="https://kit.fontawesome.com/2bfe2b70c5.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Lobster|Permanent+Marker|Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> </head>
@@ -38,7 +39,8 @@
     </div> -->
     <header>
         <h1 class="section2Header"> Which One Do You Like?</h1> </header>
-    <div class="flex-container">
+
+    <div class="flex-container" id="questionGroup1">
         <div class="flex-item-2">
             <div class="icon">
                 <label> <img src="images/venus-2721120_640.png">
@@ -52,9 +54,12 @@
             </div>
         </div>
     </div>
+
+
     <header>
         <h1 class="section2Header"> Select Your Ascendent sign</h1> </header>
-    <div class="flex-container">
+
+    <div class="flex-container" id="questionGroup2">
         <div class="flex-item">
             <div class="box">
                 <div class="icon">
@@ -168,13 +173,21 @@
     <div class="flex-container">
         <button id="resBtn" class="submit"> Submit </button>
         <div id="myModal" class="modal">
-            <div class="modal-content">
+            <div id="gradient" class="modal-content">
                 <span class="close">&times;</span>
-                <img id="resImg" src="#">
-                <p id="editContent">Thank you for taking this test!</p>
+                <div class="flex-container">
+                    <div class="flex-item col-2">
+                        <img id="resImg" src="#">    
+                    </div>
+                     <div class="flex-item col-2">
+                        <p id="editContent">Thank you for taking this test!</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+
         <!--
     <footer class="footStyle">
         <div class="flex-container">
